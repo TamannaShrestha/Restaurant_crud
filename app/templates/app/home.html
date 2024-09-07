@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg">
+        <div class="container">
+          <a class="navbar-brand text-success" href="#"><i class="fa-solid fa-burger"></i>Burger</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Allergy Advice</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <i class="fa-brands fa-facebook mt-3 me-2 alert alert-secondary"></i>
+              <i class="fa-brands fa-tiktok mt-3 me-2 alert alert-secondary"></i> <i class="fa-brands fa-instagram mt-3 me-2 alert alert-secondary"></i>
+            <button class="btn btn-danger " type="submit">Contact US</button>
+            
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+    <hr class="bolder-20 text-dark mx-auto w-80">
+   <!-- NAVBAR END -->
+
+     <!-- 1st div START-->
+        
+             <div class="container my-5 custom-gap" >
+              <div class="row">
+                <div class="col-6 justify-content-center flex-column d-flex align-items-center ">
+                  <h1>The one <br><b class="text-danger">MoMo Restaurant</b></h1>
+                  <p class="text-center">more than <i class="text-danger">20+ varieties</i> of momo available for you</p>
+                  <button  class="btn btn-success w-10"  data-bs-toggle="tooltip" data-bs-title="about me">Explore food menu<i class="fas fa-arrow-right"></i></button>
+                </div>
+
+                <div class="col-6">
+                    <img src="{% static 'images/bg_1.jpg' %}" alt="MoMo Restaurant" class="img-fluid about_img" >
+                  </div>
+
+              </div>
+             </div>
+       <!--  1st div  END -->
+
+       <!-- 2nd div START-->
+        
+       <div class="container my-10" >
+        <div class="row">
+
+          <div class="col-6">
+            <img src="{% static 'images/bg_2.jpg' %}" alt="MoMo Restaurant" class="img-fluid about_img" >
+          </div>
+
+          <div class="col-6 justify-content-center flex-column d-flex align-items-center ">
+            <h1>Why customers<i class="text-danger">LovE US</i> </h1>
+            <p class="text-center">Customers love us because we offer a delicious and diverse menu, 
+              including over 20 varieties of momos made with fresh, high-quality ingredients. Our exceptional service
+               and cozy atmosphere make dining with us a delightful experience. We provide great value for money with
+                generous portions and reasonable prices. We consistently deliver the same great taste and quality 
+                every visit. Plus, our commitment to community engagement and listening to customer 
+              feedback ensures we continually improve and connect with our guests.</p>
+            <button  class="btn btn-success w-10"  data-bs-toggle="tooltip" data-bs-title="about me">Explore Our STORY <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+        </div>
+       </div>
+ <!--  2nd div  END  -->
+
+   <!-- 3rd div start -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="colm-12">
+          <h3 class="text-center">Our <i class="text-danger">most popular</i> Recipes</h3>
+          <p class="text-center">
+            Our popular recipes delight with their exquisite flavors and fresh, high-quality ingredients.</p>
+            <br>
+            <div class="text-center ">
+              <button type="button" class="btn btn-outline-dark">Buff</button>
+              <button type="button" class="btn btn-outline-dark">Chicken</button>
+              <button type="button" class="btn btn-outline-dark">Veg</button>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                      <img src="{% static 'images/bg_4.jpg' %}" alt="MoMo Restaurant" class="img-fluid circle_img">
+                  </div>
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                      <img src="{% static 'images/bg_3jpg.jpg' %}" alt="MoMo Restaurant" class="img-fluid circle_img">
+                  </div>
+                  <div class="col-4 d-flex justify-content-center align-items-center">
+                      <img src="{% static 'images/bg_5.jpg' %}" alt="MoMo Restaurant" class="img-fluid cirlce_img">
+                  </div>
+              </div>
+          </div>
+          
+          
+          
+     
+        </div>
+      </div>
+    </div>
+    <!-- 3rd div end -->
+
+    \           <!-- form -->
+   <div class="container alert alert-primary">
+    <div class="row">
+      <div class="coml-10 mx-auto">
+        <form >
+
+      
+          <div class="mb-3">
+            <label for="name" class="form-label">First Name</label>
+            <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" name="age" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Emai Address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-floating">
+           
+            <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Messages</label>
+          </div>
+        <br>  
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+   </div>
+
+    
+        
+
+
+
+        </div>
+      </div>
+     </div>
+   

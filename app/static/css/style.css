@@ -1,0 +1,12 @@
+.img{
+    height: 90vh;
+    width: 100vh;
+    object-fit: center;
+ 
+}
+.custom-gap{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+/* Add this to your style.css file */
+
